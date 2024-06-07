@@ -11,7 +11,7 @@ const BOT_MSGS = [
 ];
 
 // Icons made by Freepik from www.flaticon.com
-const BOT_IMG = "morrison.svg";
+const BOT_IMG = "morrison.png";
 const PERSON_IMG = "https://image.flaticon.com/icons/svg/145/145867.svg";
 const BOT_NAME = "Mr. Morrison";
 const PERSON_NAME = "Jakob";
