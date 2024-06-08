@@ -1,66 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-<title>Jakob 7. Geburtstag</title>
-<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Drei Bilder</title>
+	<style>
+		/* Basis-Styling für alle Bilder */
+		img {
+			margin: 10px; /* Abstand zwischen den Bildern */
+			width: 30%; /* Breite der Bilder (z.B. 30% der Bildschirmbreite) */
+			height: auto; /* Automatische Höhenanpassung */
+		}
 
+		/* Styling für das erste Bild (Schwarzweißstreifen) */
+		#bild1 {
+			filter: grayscale(1); /* Schwarzweiß-Filter */
+		}
+
+		/* Styling für das zweite Bild (Arktis) */
+		#bild2 {
+			filter: url("filter.svg#arktis"); /* Schneefilter (benötigt SVG-Filterdatei "filter.svg") */
+		}
+	</style>
 </head>
 <body>
+	<h1>Drei Bilder</h1>
 
-<section class="msger">
-	  <header class="msger-header">
-		<div class="msger-header-title">
-		  <i class="fas fa-comment-alt"></i> Chat mit Mr. Morrison
-		</div>
-		<div class="msger-header-options">
-		  <span><i class="fas fa-cog"></i></span>
-		</div>
-	  </header>
-	
-	  <main class="msger-chat">
-		<div class="msg left-msg">
-		  <div
-		   class="msg-img"
-		   style="background-image: url(morrison.png)"
-		  ></div>
-	
-		  <div class="msg-bubble">
-			<div class="msg-info">
-			  <div class="msg-info-name">Mr. Morrison</div>
-			  <div class="msg-info-time">12:45</div>
-			</div>
-	
-			<div class="msg-text">
-			  Hallo, hier ist Mr. Morrison, ich helfe dir bei der Lösung des Rätsels 😄
-			</div>
-		  </div>
-		</div>
-	<!--<
-		<div class="msg right-msg">
-		  <div
-		   class="msg-img"
-		   style="background-image: url(https://image.flaticon.com/icons/svg/145/145867.svg)"
-		  ></div>
-	
-		  div class="msg-bubble">
-			<div class="msg-info">
-			  <div class="msg-info-name">Sajad</div>
-			  <div class="msg-info-time">12:46</div>
-			</div>
-	
-			<div class="msg-text">
-			  You can change your name in JS section!
-			</div>-->
-		  </div>
-		</div>
-	  </main>
-	
-	  <form class="msger-inputarea">
-		<input type="text" class="msger-input" placeholder="Enter your message...">
-		<button type="submit" class="msger-send-btn">Send</button>
-	  </form>
-	</section>
-
-<script src="script.js"></script>
+	<div>
+		<img id="bild1" src="bild1.jpg" alt="Schwarzweißstreifen">
+		<img id="bild2" src="bild2.jpg" alt="Arktis">
+		<img id="bild3" src="bild3.jpg" alt="Vogel">
+	</div>
 </body>
 </html>
